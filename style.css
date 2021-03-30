@@ -11,7 +11,6 @@ body {
   border-width: 25px;
   border: 25px solid white;
   font-family: "Trebuchet MS", Arial, sans-serif;
-
 }
 
 .main {
@@ -53,31 +52,30 @@ h3 {
   height: 65px;
   vertical-align: middle;
   line-height: 20px;
+  background-color: #7a7593;
 }
-.shopping_list li:hover {
-  background-color: #4a4f56;
+.section ul li:hover {
+  background-color: #625e77;
+  cursor: pointer;
   border-top: 2px solid #fff;
   border-bottom: 2px solid #fff;
 }
-.shopping_list li:nth-child(odd) {
-  background-color: #88839e;
-}
-.shopping_list li:nth-child(even) {
-  background-color: #7a7593;
-}
-.shopping_list .check--label-text,
-.cb {
+
+span,
+p,
+input:hover {
   cursor: pointer;
 }
-
-.section ul li:hover {
-  background-color: #625e77;
-}
-
 p {
   display: inline-block;
   font-size: 16px;
   color: #cdcbcd;
+}
+input:checked ~ span {
+  text-decoration: line-through;
+}
+input:checked ~ span > p {
+  text-decoration: line-through;
 }
 
 .footer {
